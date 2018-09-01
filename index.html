@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <nav class="teal">
-        <div class="container">
 
+    <!-- SECTION: Navigation -->
+    <nav class="cyan">
+        <div class="container">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">Travelcations</a>
                 <a href="#" data-target="mobile-navigation" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -39,20 +40,48 @@
                     </li>
                     <li>
                         <ul>
-                            <li><a href="#home"><i class="material-icons teal-text">home</i> Home</a></li>
-                            <li><a href="#search"><i class="material-icons teal-text">search</i> Search</a></li>
-                            <li><a href="#popular-places"><i class="material-icons teal-text">star</i> Popular Places</a></li>
-                            <li><a href="#gallery"><i class="material-icons teal-text">image</i> Gallery</a></li>
-                            <li><a href="#contact"><i class="material-icons teal-text">local_phone</i> Contact</a></li>
+                            <li><a href="#home"><i class="material-icons cyan-text">home</i> Home</a></li>
+                            <li><a href="#search"><i class="material-icons cyan-text">search</i> Search</a></li>
+                            <li><a href="#popular-places"><i class="material-icons cyan-text">star</i> Popular Places</a></li>
+                            <li><a href="#gallery"><i class="material-icons cyan-text">image</i> Gallery</a></li>
+                            <li><a href="#contact"><i class="material-icons cyan-text">local_phone</i> Contact</a></li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
-
         </div>
-
     </nav>
+
+
+    <!-- SECTION: Carousel -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="images/location1.jpg" alt="" />
+                <div class="caption center-align">
+                    <h1>Take your dream vacation</h1>
+                    <h5 class="white-text hide-on-small-only">Lorem ipsum dolor sit amet.</h5>
+                    <a class="btn btn-large waves-effect waves-orange yellow accent-4 white-text">contact us now</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/location2.jpg" alt="" />
+                <div class="caption center-align">
+                    <h1>We work with all budgets</h1>
+                    <h5 class="white-text hide-on-small-only">Lorem ipsum dolor sit amet.</h5>
+                    <a class="btn btn-large waves-effect waves-orange yellow accent-4 white-text">contact us now</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/location3.jpg" alt="" />
+                <div class="caption center-align">
+                    <h1>Group &amp; Individual getaways</h1>
+                    <h5 class="white-text hide-on-small-only">Lorem ipsum dolor sit amet.</h5>
+                    <a class="btn btn-large waves-effect waves-orange yellow accent-4 white-text">contact us now</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -64,6 +93,17 @@
             }
             var instances = M.Sidenav.init(elems, options);
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var options = {
+                height: 500,
+                interval: 6000,
+                indicators: true
+            }
+            var instances = M.Slider.init(elems, options);
+        });
+
     </script>
 </body>
 
