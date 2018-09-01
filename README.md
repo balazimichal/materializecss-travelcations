@@ -12,5 +12,5 @@ To run this project folow this steps:
 
 ## Image copyrights
 
-Gallery images are free images from https://unsplash.com/
-Autocomplete icons, sliders and content boxes are licensed images from https://elements.envato.com/
+- Gallery images are free images from https://unsplash.com/
+- Autocomplete icons, sliders and content boxes are licensed images from https://elements.envato.com/
