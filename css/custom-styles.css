@@ -1,0 +1,16 @@
+.slider h5 {
+  margin-bottom: 30px;
+}
+
+.slider .indicators {
+  bottom: 50px;
+  z-index: 8;
+}
+
+.slider .indicators .indicator-item {
+  background: #ffe0b2;
+}
+
+.slider .indicators .indicator-item.active {
+  background: #ff9800;
+}
