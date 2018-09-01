@@ -23,7 +23,7 @@
                     <li><a href="#search">SEARCH</a></li>
                     <li><a href="#popular-places">POPULAR PLACES</a></li>
                     <li><a href="#gallery">GALLERY</a></li>
-                    <li><a class="btn aves-effect waves-orange yellow accent-4 white-text" href="#contact">CONTACT</a></li>
+                    <li><a class="btn waves-effect waves-orange yellow accent-4 white-text" href="#contact">CONTACT</a></li>
                 </ul>
                 <ul class="sidenav" id="mobile-navigation">
                     <li>
@@ -54,6 +54,7 @@
             </div>
         </div>
     </nav>
+
 
 
     <!-- SECTION: Carousel -->
@@ -87,6 +88,59 @@
     </div>
 
 
+
+    <!-- SECTION: Search -->
+    <section class="section section-search cyan darken-1 white-text center">
+        <div class="row">
+            <div class="col s10 offset-s1">
+                <h3>Search Destinations</h3>
+                <div class="input-field">
+                    <input type="text" class="white grey-text autocomplete" placeholder="Aruba, Cancun, etc..." id="autocomplete-input">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECTION: Icon Boxes -->
+    <section class="section section-icons grey lighten-4 center">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <i class="material-icons large cyan-text">
+                        room
+                    </i>
+                    <h4>Pick Where</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <i class="material-icons large cyan-text">
+                        store
+                    </i>
+                    <h4>Travel Shop</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <i class="material-icons large cyan-text">
+                        airplanemode_active
+                    </i>
+                    <h4>Fly Cheap</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- SCRIPTS -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -105,6 +159,25 @@
                 indicators: true
             }
             var instances = M.Slider.init(elems, options);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.autocomplete');
+            var options = {
+
+                data: {
+                    "Aruba": "images/aruba-icon.jpg",
+                    "Cancun Mexico": "images/mexico-icon.jpg",
+                    "Hawaii": "images/hawaii-icon.jpg",
+                    "Florida": "images/florida-icon.jpg",
+                    "California": "images/california-icon.jpg",
+                    "Jamaica": "images/jamaica-icon.jpg",
+                    "Europe": "images/europe-icon.jpg",
+                    "The Bahamas": "images/bahamas-icon.jpg",
+                }
+
+            }
+            var instances = M.Autocomplete.init(elems, options);
         });
 
     </script>
