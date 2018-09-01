@@ -9,9 +9,56 @@
 </head>
 
 <body>
+    <nav class="teal">
+        <div class="container">
+
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Travelcations</a>
+                <a href="#" data-target="mobile-navigation" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#popular-places">Popular Places</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="sidenav" id="mobile-navigation">
+                    <li>
+                        <div class="user-view teal">
+                            <h5>Travelcations</h5>
+                            <div class="name">
+                                555-555-555
+                            </div>
+                            <div class="email">
+                                hello@travelcations.com
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#search">Search</a></li>
+                            <li><a href="#popular-places">Popular Places</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
 
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
 </body>
 
 </html>
