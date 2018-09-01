@@ -24,23 +24,26 @@
                 </ul>
                 <ul class="sidenav" id="mobile-navigation">
                     <li>
-                        <div class="user-view teal">
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="images/nav-background.jpg">
+                            </div>
                             <h5>Travelcations</h5>
-                            <div class="name">
+                            <a href="tel:555-555-555" class="name">
                                 555-555-555
-                            </div>
-                            <div class="email">
+                            </a>
+                            <a href="mailto:hello@travelcations.com" class="email">
                                 hello@travelcations.com
-                            </div>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#search">Search</a></li>
-                            <li><a href="#popular-places">Popular Places</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#home"><i class="material-icons teal-text">home</i> Home</a></li>
+                            <li><a href="#search"><i class="material-icons teal-text">search</i> Search</a></li>
+                            <li><a href="#popular-places"><i class="material-icons teal-text">star</i> Popular Places</a></li>
+                            <li><a href="#gallery"><i class="material-icons teal-text">image</i> Gallery</a></li>
+                            <li><a href="#contact"><i class="material-icons teal-text">local_phone</i> Contact</a></li>
                         </ul>
                     </li>
 
@@ -56,7 +59,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
+            var options = {
+                'edge': 'left'
+            }
+            var instances = M.Sidenav.init(elems, options);
         });
     </script>
 </body>
