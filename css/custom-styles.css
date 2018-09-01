@@ -47,3 +47,11 @@
 .input-field .prefix.active {
   color: #00bcd4 !important;
 }
+
+.col.s12 > .btn {
+  width: 100%;
+}
+
+.row .col.m-4 {
+  width: 33.33%;
+}
