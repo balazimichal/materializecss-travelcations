@@ -2,7 +2,7 @@
 
 Travelcations is a travelling company selling vacation packages. This one page site was build with materialize CSS framework. It is one page responsive website comprized of sidebar mobile navigation, slider section, search section with autocomplete, gallery with lightbox and nice contact form.
 
-You can preview this app on surge: http://travelcations.surge.sh/
+You can preview this app on surge: https://travelcations.surge.sh/
 
 ## Features
 
