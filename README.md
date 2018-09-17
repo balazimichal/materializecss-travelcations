@@ -11,6 +11,8 @@ You can preview this app on surge: https://travelcations.surge.sh/
 - autocomplete
 - lighbox gallery
 
+![travelcations app image](/images/screencapture-travelcations.jpg)
+
 ## Technologies
 
 - HTML5
